@@ -126,7 +126,7 @@ function convertQuery(node: any, level: number, output: [string, number][], opti
                             .join(' ')
                     }
                     if (argsExist) {
-                        if(options.hasura)
+                        if (options.hasura)
                             argsStr = '(object: {'.concat(buildArgs(value.__args), ' })');
                         else
                             argsStr = '('.concat(buildArgs(value.__args), ')');
