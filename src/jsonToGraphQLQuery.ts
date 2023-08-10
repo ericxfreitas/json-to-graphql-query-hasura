@@ -127,9 +127,9 @@ function convertQuery(node: any, level: number, output: [string, number][], opti
                     }
                     if (argsExist) {
                         if(options.hasura)
-                            argsStr = "(object: {".concat(buildArgs(value.__args), " })");
+                            argsStr = '(object: {'.concat(buildArgs(value.__args), ' })');
                         else
-                            argsStr = "(".concat(buildArgs(value.__args), ")");
+                            argsStr = '('.concat(buildArgs(value.__args), ')');
                     }
                     const spacer = directivesExist && argsExist ? ' ' : '';
                     token = `${token} ${argsStr}${spacer}${dirsStr}`;
