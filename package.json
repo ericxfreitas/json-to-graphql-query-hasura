@@ -1,5 +1,5 @@
 {
-    "name": "json-to-graphql-query",
+    "name": "@ericxfreitas/json-to-graphql-query",
     "version": "2.2.5",
     "main": "lib/index.js",
     "license": "MIT",
